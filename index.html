@@ -3,225 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creator Management App</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-h1, h2, h3, h4 {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.container {
-    display: flex;
-    min-height: 100vh;
-}
-
-/* Sidebar Navigation */
-.sidebar {
-    width: 250px;
-    background-color: #333;
-    padding: 20px;
-    color: white;
-}
-
-.sidebar h2 {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin-bottom: 20px;
-}
-
-.sidebar ul li a {
-    color: white;
-    padding: 10px;
-    display: block;
-    background-color: #444;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.sidebar ul li a:hover {
-    background-color: #555;
-}
-
-/* Main Content Area */
-.main-content {
-    flex: 1;
-    padding: 20px;
-    background-color: white;
-}
-
-.header {
-    background-color: #007BFF;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.card {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-}
-
-.card h3 {
-    margin-bottom: 15px;
-    font-size: 1.2em;
-}
-
-.card p {
-    margin-bottom: 10px;
-}
-
-/* Table for Creator List */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-table th, table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
-
-table th {
-    background-color: #007BFF;
-    color: white;
-}
-
-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-table tr:hover {
-    background-color: #f1f1f1;
-}
-
-/* Form Styles */
-form {
-    margin-top: 20px;
-}
-
-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-form input, form select, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    padding: 10px 15px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-form button:hover {
-    background-color: #0056b3;
-}
-
-    </style>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <h2>Creator Management</h2>
-            <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Manage Creators</a></li>
-                <li><a href="#">Add New Creator</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
-        </div>
-        
-        <div class="main-content">
-            <div class="header">
-                <h1>Manage Creators</h1>
-            </div>
-
-            <div class="card">
-                <h3>Creator List</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Platform</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>John Doe</td>
-                            <td>john@example.com</td>
-                            <td>YouTube</td>
-                            <td>Active</td>
-                        </tr>
-                        <!-- More rows -->
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="card">
-                <h3>Add New Creator</h3>
-                <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-
-                    <label for="platform">Platform</label>
-                    <select id="platform" name="platform">
-                        <option value="youtube">YouTube</option>
-                        <option value="twitch">Twitch</option>
-                        <option value="instagram">Instagram</option>
-                    </select>
-
-                    <button type="submit">Add Creator</button>
-                </form>
-            </div>
-        </div>
+  <div class="left-top-circle">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 88 88" fill="none">
+        <g filter="url(#filter0_ddii_2115_188)">
+          <circle cx="54" cy="28" r="21" fill="#F9E5BF"/>
+          <circle cx="54" cy="28" r="22.5" stroke="url(#paint0_angular_2115_188)" stroke-width="3"/>
+        </g>
+        <defs>
+          <filter id="filter0_ddii_2115_188" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.75 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2115_188"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dx="-10" dy="16"/>
+            <feGaussianBlur stdDeviation="10"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0"/>
+            <feBlend mode="normal" in2="effect1_dropShadow_2115_188" result="effect2_dropShadow_2115_188"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_2115_188" result="shape"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dx="5" dy="-6"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.992157 0 0 0 0 0.960784 0 0 0 0 0.854902 0 0 0 1 0"/>
+            <feBlend mode="normal" in2="shape" result="effect3_innerShadow_2115_188"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feMorphology radius="3" operator="erode" in="SourceAlpha" result="effect4_innerShadow_2115_188"/>
+            <feOffset dx="-2" dy="3"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.972549 0 0 0 0 0.819608 0 0 0 0 0.623529 0 0 0 1 0"/>
+            <feBlend mode="normal" in2="effect3_innerShadow_2115_188" result="effect4_innerShadow_2115_188"/>
+          </filter>
+          <radialGradient id="paint0_angular_2115_188" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(54 28) rotate(-49.1446) scale(24.4592 24.2578)">
+            <stop offset="0.698529" stop-color="#ECBD7D"/>
+            <stop offset="1" stop-color="#F4F5EB"/>
+          </radialGradient>
+        </defs>
+      </svg>
     </div>
+    <div class="right-top-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 88 88" fill="none">
+            <g filter="url(#filter0_ddii_2115_190)">
+              <circle cx="54" cy="28" r="21" fill="#F9E5BF"/>
+              <circle cx="54" cy="28" r="22.5" stroke="url(#paint0_angular_2115_190)" stroke-width="3"/>
+            </g>
+            <defs>
+              <filter id="filter0_ddii_2115_190" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="2"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.75 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2115_190"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-10" dy="16"/>
+                <feGaussianBlur stdDeviation="10"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0"/>
+                <feBlend mode="normal" in2="effect1_dropShadow_2115_190" result="effect2_dropShadow_2115_190"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_2115_190" result="shape"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="5" dy="-6"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.992157 0 0 0 0 0.960784 0 0 0 0 0.854902 0 0 0 1 0"/>
+                <feBlend mode="normal" in2="shape" result="effect3_innerShadow_2115_190"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feMorphology radius="3" operator="erode" in="SourceAlpha" result="effect4_innerShadow_2115_190"/>
+                <feOffset dx="-2" dy="3"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.972549 0 0 0 0 0.819608 0 0 0 0 0.623529 0 0 0 1 0"/>
+                <feBlend mode="normal" in2="effect3_innerShadow_2115_190" result="effect4_innerShadow_2115_190"/>
+              </filter>
+              <radialGradient id="paint0_angular_2115_190" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(54 28) rotate(-49.1446) scale(24.4592 24.2578)">
+                <stop offset="0.698529" stop-color="#ECBD7D"/>
+                <stop offset="1" stop-color="#F4F5EB"/>
+              </radialGradient>
+            </defs>
+          </svg>
+    </div>
+    <div class="right-down-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 88 88" fill="none">
+            <g filter="url(#filter0_ddii_2115_188)">
+              <circle cx="54" cy="28" r="21" fill="#F9E5BF"/>
+              <circle cx="54" cy="28" r="22.5" stroke="url(#paint0_angular_2115_188)" stroke-width="3"/>
+            </g>
+            <defs>
+              <filter id="filter0_ddii_2115_188" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="2"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.75 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2115_188"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-10" dy="16"/>
+                <feGaussianBlur stdDeviation="10"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0"/>
+                <feBlend mode="normal" in2="effect1_dropShadow_2115_188" result="effect2_dropShadow_2115_188"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_2115_188" result="shape"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="5" dy="-6"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.992157 0 0 0 0 0.960784 0 0 0 0 0.854902 0 0 0 1 0"/>
+                <feBlend mode="normal" in2="shape" result="effect3_innerShadow_2115_188"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feMorphology radius="3" operator="erode" in="SourceAlpha" result="effect4_innerShadow_2115_188"/>
+                <feOffset dx="-2" dy="3"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.972549 0 0 0 0 0.819608 0 0 0 0 0.623529 0 0 0 1 0"/>
+                <feBlend mode="normal" in2="effect3_innerShadow_2115_188" result="effect4_innerShadow_2115_188"/>
+              </filter>
+              <radialGradient id="paint0_angular_2115_188" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(54 28) rotate(-49.1446) scale(24.4592 24.2578)">
+                <stop offset="0.698529" stop-color="#ECBD7D"/>
+                <stop offset="1" stop-color="#F4F5EB"/>
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="left-down-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 88 88" fill="none">
+                <g filter="url(#filter0_ddii_2115_188)">
+                  <circle cx="54" cy="28" r="21" fill="#F9E5BF"/>
+                  <circle cx="54" cy="28" r="22.5" stroke="url(#paint0_angular_2115_188)" stroke-width="3"/>
+                </g>
+                <defs>
+                  <filter id="filter0_ddii_2115_188" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="2"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.75 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2115_188"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="-10" dy="16"/>
+                    <feGaussianBlur stdDeviation="10"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0"/>
+                    <feBlend mode="normal" in2="effect1_dropShadow_2115_188" result="effect2_dropShadow_2115_188"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_2115_188" result="shape"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="5" dy="-6"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.992157 0 0 0 0 0.960784 0 0 0 0 0.854902 0 0 0 1 0"/>
+                    <feBlend mode="normal" in2="shape" result="effect3_innerShadow_2115_188"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feMorphology radius="3" operator="erode" in="SourceAlpha" result="effect4_innerShadow_2115_188"/>
+                    <feOffset dx="-2" dy="3"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.972549 0 0 0 0 0.819608 0 0 0 0 0.623529 0 0 0 1 0"/>
+                    <feBlend mode="normal" in2="effect3_innerShadow_2115_188" result="effect4_innerShadow_2115_188"/>
+                  </filter>
+                  <radialGradient id="paint0_angular_2115_188" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(54 28) rotate(-49.1446) scale(24.4592 24.2578)">
+                    <stop offset="0.698529" stop-color="#ECBD7D"/>
+                    <stop offset="1" stop-color="#F4F5EB"/>
+                  </radialGradient>
+                </defs>
+              </svg>
+            </div>
+           
+           <h1>Tic<br>Tac<br> Toe</h1>
+           
+           <img class=border src="./assets/images/misc.png">
+           <img class=element src="./assets/images/midjourney-image.png">
+           <a href="tictactoe.html">
+           <img class=button src="./assets/images/Tag (1).png">
+          </a>
 </body>
 </html>
