@@ -1,0 +1,125 @@
+body{
+    background-color:#ECE5D5;;
+}
+.box {
+    width: 797px;
+    height: 797px;
+  }
+  
+  .box .framer {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    top: 200px;
+    left: 600px;
+  }
+ .circle img{
+    position:fixed;
+    top: 600px;
+    left: 700px;
+    height: 40px;px;
+    width:40px;
+ }
+ .bg img{
+  position:fixed;
+  top:600px;
+  left:860px;
+  height: 70px;px;
+  width: 40px;px;
+ }
+ .hollow img{
+  position:fixed;
+  top:605px;
+  left:855px;
+  height: 45px;
+  width: 45px;
+ }
+ .star img{
+  position:fixed;
+  top:602px;
+  left:855px;
+  height: 45px;
+  width: 45px;
+ }
+ .reset img{
+  position:fixed;
+  top:602px;
+  left:780px;
+  height: 45px;
+  width: 45px;
+ }
+ .game .bo{
+  opacity: 0;
+ }
+ .game .b1{
+  position:fixed;
+  top:244px;
+  left:680px;
+  height: 92px;
+  width: 86px;
+  
+ }
+ .game .b2{
+  position:fixed;
+  top:250px;
+  left:769px;
+  height: 86px;
+  width: 86px;
+  
+ }
+ .game .b3{
+  position:fixed;
+  top:250px;
+  left:860px;
+  height: 86px;
+  width: 86px;
+  
+ }
+ .game .b4{
+  position:fixed;
+  top:340px;
+  left:680px;
+  height: 86px;
+  width: 86px;
+  
+ }
+ .game .b5{
+  position:fixed;
+  top:340px;
+  left:769px;
+  height: 86px;
+  width: 86px;
+  
+ }
+ .game .b6{
+  position:fixed;
+  top:340px;
+  left:860px;
+  height: 86px;
+  width: 86px;
+  
+ }
+ .game .b7{
+  position:fixed;
+  top:430px;
+  left:680px;
+  height: 86px;
+  width: 86px;
+  
+ }
+ .game .b8{
+  position:fixed;
+  top:430px;
+  left:769px;
+  height: 86px;
+  width: 86px;
+  
+ }
+ .game .b9{
+  position:fixed;
+  top:430px;
+  left:860px;
+  height: 86px;
+  width: 86px;
+  
+ }
